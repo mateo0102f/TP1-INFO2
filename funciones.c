@@ -41,3 +41,21 @@ void ordenar_articulos(articulos_t articulos[]) {
         }
     }
 }
+
+void cargar_fichas_interactivamente(articulos_t articulos[]) {
+    int opc = 0, sucursal;
+    char articulo[90];
+
+    do {
+        printf("Ingrese la descripcion del articulo: ");
+        scanf("%s", articulo);
+
+        printf("Para que sucursal va a realizar la carga? (1,2,3): ");
+        scanf("%d", &sucursal);
+
+        cargar_articulo(articulos, articulo, sucursal);
+
+        printf("Desea ingresar otro articulo? 1-Si, 2-No: ");
+        scanf("%d", &opc);
+    } while (opc == 1);
+}
