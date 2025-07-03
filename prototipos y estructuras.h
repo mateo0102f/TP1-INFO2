@@ -16,5 +16,6 @@ typedef struct {
 void cargar_articulo(articulos_t articulos[], char articulo[], int sucursal);
 void imprimir_articulos(const articulos_t articulos[]);
 void ordenar_articulos(articulos_t articulos[]);
+void cargar_fichas_interactivamente(articulos_t articulos[]);
 
 #endif
